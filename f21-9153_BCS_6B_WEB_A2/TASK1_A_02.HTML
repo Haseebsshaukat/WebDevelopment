@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Pizza Delight</title>
+<STYle>
+    body{
+        font-family: 'Gabarito',cursive;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        background: url(pizza_image2.jpg) no-repeat;
+        background-size:contain; /* This will cover the entire viewport */
+        /* background-position: ; Center the image horizontally and vertically */
+    }
+   body.background img {
+  
+  transition: transform 60s ease; /* Add a smooth transition */
+}
+
+body.background:hover img {
+  transform: rotateX(360deg); /* Apply transformation on hover */
+}
+    /* #myDiv {
+    transform: rotateZ(90deg);
+    } */
+    .header{
+        background: #ee7b1c;
+        padding: 50px;
+    }
+    .left{
+        left: 20px;
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .right{
+        right: 36px;
+        position: absolute;
+        top: 40px;
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        top: 20px;
+        /* border: 2px solid green; */
+        text-align: center;
+
+    }
+    .navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border: 8px;
+    border-color: chocolate;
+}
+
+.navbar li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: rgb(237, 230, 230);
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 30px;
+    
+}
+
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: rgb(241, 182, 64);
+}
+
+.container{
+    padding: 75px;
+    width: 33%;
+    margin-top: 200px;
+    margin-left: 750px;
+    margin-bottom: 0 px;
+}
+.form-group input{
+    font-family: 'Gabarito',cursive;
+    text-align: center;
+    display: block;
+    width: 835px;
+    padding: 1px;
+    border: 5px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: cursive;
+}
+.form-group textarea{
+    border-radius: 8px;
+    border: 5px solid black;
+    font-size: 13px;
+    display: block;
+}
+.container h1{
+    text-align: center;
+    display: block;
+     color:black;
+     font-size: 50px;
+    
+}
+.container h2{
+    text-align: start;
+    display: block;
+     color:black;
+     
+    
+}
+.container button {
+  background-color:#ee7b1c;
+ 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+   margin: 4px 2px;
+  cursor: pointer;
+
+}
+/* .container button
+{
+    
+    display:inline-block;
+    width: 50%;
+    margin: 15px auto;
+    height: 30px;
+    background-color: #ee7b1c;
+} */
+.Recommendations{
+    text-align: center;
+    color: black;
+    margin-top: 200px;
+}
+.Recommendations h1{
+    font-size: 50px;
+}
+.Recommendations i{
+    font-size: larger;
+}
+.Recommendation{
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+}
+.Recommendation h1{
+    font-size: 50px;
+}
+.Recommendation p{
+    font-size: large;
+}
+.Recommendation button {
+  background-color:#ee7b1c;
+ 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+   margin: 4px 2px;
+  cursor: pointer;
+
+}
+.ROW1{
+    box-shadow: 5px 5px 5px 5px rgb(233, 233, 246);
+    width: 2370px;
+  height: 100px;
+  
+  padding: 2em;
+  margin:  25px;
+  border: 2em;
+  transition: width 1s, height 1s;
+  font-size:x-large;
+  color: black;
+}
+.ROW2{
+    box-shadow: 5px 5px 5px 5px rgb(233, 233, 246);
+    width: 2370px;
+    height: 100px;
+    
+    padding: 2em;
+    margin:  25px;
+    border: 2em;
+    transition: width 1s, height 1s;
+    font-size:x-large;
+    color: black;
+}
+.ROW3{
+    box-shadow: 5px 5px 5px 5px rgb(233, 233, 246);
+    width: 2370px;
+  height: 100px;
+  
+  padding: 2em;
+  margin:  25px;
+  border: 2em;
+  transition: width 1s, height 1s;
+  font-size:x-large;
+  color: black;
+}
+.footer{
+    padding: 40px;
+    background: #ee7b1c;
+    text-align: center;
+    margin-top: 100px;
+}
+.pizza-specials {
+  display: flex; /* Make the container a flex container */
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+}
+div.container {
+  padding: 10px;
+  
+}
+.polaroid1,
+.polaroid2,
+.polaroid3 {
+  flex: 1; /* Distribute available space equally among the items */
+  margin: 0 10px; /* Add some margin between items */
+  float: left;
+}
+
+
+div.polaroid{
+    display: inline-block;
+    margin-top: 1700px;
+}
+div.p{
+    color: black;
+}
+div.polaroid1 {
+  width: 780px;
+  height:700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 40px;
+  
+}
+
+
+/*  */
+
+
+div.polaroid1 img {
+  
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+div.polaroid1:hover img {
+  transform: rotateX(360deg); /* Apply transformation on hover */
+}
+/*  */
+div.polaroid2 {
+    width: 780px;
+  height:700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px 10px;
+  color: black;
+  font-size: 40px;
+}
+div.polaroid2 img {
+  
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+div.polaroid2:hover img {
+  transform: rotatey(360deg); /* Apply transformation on hover */
+}
+div.polaroid3 {
+    width: 780px;
+  height:700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px 10px;
+  color: black;
+  font-size: 40px;
+  overflow: hidden; /* Ensure the image does not overflow the polaroid */
+   
+}
+div.polaroid3 img {
+  
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+div.polaroid3:hover img {
+  transform: rotatez(360deg); /* Apply transformation on hover */
+}
+
+/* div {
+  box-shadow: 10px 10px 5px lightblue;
+} */
+
+</STYle>
+</head>
+<body>
+
+
+    <header class="header"> 
+        <!-- left box for logo -->
+        <div class="left">
+            <h1>Pizza Delight</h1>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Specials Us</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Contact</a></li>
+               </ul>
+          
+        </div>
+    
+    </header>
+
+
+<section class="slider">
+
+</section>
+
+<section class="pizza-specials">
+    <div class="polaroid">
+        <h1 style="color: black; font-size: 40px;text-align: center;">Today's Special</h1>
+    <div class="polaroid1">
+        <img src="pizza1.png" alt="Norway" style="width:100%">
+        <div class="textpolaroid">
+          <p>Supreme</p>
+        </div>
+      </div>
+      <div class="polaroid2">
+        <img src="pizza3.png" alt="Norway" style="width:100%">
+        <div class="textpolaroid">
+          <p>Hot Fajita</p>
+        </div>
+      </div>
+      <div class="polaroid3">
+        <img src="pizza3.png" alt="Norway" style="width:100%">
+        <div class="textpolaroid">
+          <p>Behari Kabab</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="Recommendations">
+<h1>What Our Customers Says</h1>
+<i> " The Best Pizza in town I can't get enough of their delicios crust and fresh toppings "</i><br><br>
+<i>_ john D</i><br><br>
+<i>" Pizza delight never disappears Quick Delivery and mouth watering Flavours , Highly Recommended "</i><br><br>
+<i>_ Sarah M</i><br>
+</div>
+</section>
+
+<section class="cta">
+    <div class="Recommendation">
+        <h1>Ready To Order ?</h1>
+<p>Experience the Taste of Perfection. Order now and enjoy a delightful pizza Experience </p>
+        <button class="btn"> Order Now</button>
+
+</section>
+
+<section class="three-columns">
+
+<div class="ROW1">
+    <H1>Quality Ingrediants</H1>
+    <p>We Use only the finest and freshest Ingrediants to craft our delicios Pizza's</p>
+</div>
+<div class="ROW2">
+    <H1>Customization Options</H1>
+    <p>
+        Customize your pizza with a variety of toppings, sauces and crust options to suit your taste.
+    </p>
+</div>
+<div class="ROW3">
+    <H1>Fast Delivery </H1>
+    <p>
+        Enjoy Quick and Relaible delivery services to serve your pizza at its best
+    </p>
+</div>
+
+</section>
+
+<section class="contact-form">
+<!-- Add the form of task 1... -->
+<div class="container">
+    <h1>
+        Contact Us
+    </h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <h2>Your Name</h2>
+        <input type="text" name="" placeholder="Haseeb shoukat">
+        </div>
+
+        <div class="form-group">
+            <h2>Your Email</h2>
+            <input type="text" name="" placeholder=" email@Gmail.com">
+        </div>
+
+        <div class="form-group">
+            <h2>Your Phone No.</h2>
+            <input type="text" name="" placeholder="03127898983">
+        </div>
+        <div class="form-group">
+            <h2>Type Here...</h2>
+            <textarea name="" id="" cols="110" rows="10"></textarea>
+        </div>
+        <button class="btn">Submit</button>
+        <button class="btn">Reset</button>
+    </form>
+</div>
+</section>
+
+
+<footer>
+    <div class="footer">
+    <h2>@2024 Pizza Delight, All Rights Reserved</h2>
+</div>
+</footer>
+
+</body>
+</html>
